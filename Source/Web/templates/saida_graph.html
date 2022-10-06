@@ -1,0 +1,60 @@
+<html>
+   <head>
+    <title>Resultados</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+
+   </head>
+   <body>
+<div>
+<style>
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+</style>
+      {% block content %}
+      <div class="jumbotron">
+        <div class="card" style = " height: 600px; width: 50%; box-shadow: 0px 0px 5px 2px grey; border-radius: 20px; padding-top: 75px;margin-top:25px;margin-bottom:25px;"">
+            <h3>Rat Previsto(%):</h3>
+            <h2> {{ value }}</h2>
+            <img src={{ grafico }}/>
+        </div>
+      </div>
+      {% endblock %}
+      
+    <canvas id="lineChart" width="900" height="400"></canvas>
+    
+    
+    
+    
+    <script>
+        var ctx = document.getElementById("lineChart").getContext("2d");
+        var lineChart = new Chart(ctx, {
+            type: "line",
+            data: {
+                labels: {{labels | safe }},
+                datasets: [
+                    {
+                        label: "Data Points",
+                        data: {{ values | safe }},
+                        fill: false,
+                        borderColor: "#fffff",
+                        lineTension: 0.1
+                    }
+                ]
+            },
+            options: {
+                responsive: false, // vai fixar o tamanho do chart
+            }
+        });
+    </script>
+
+   </body>
+</html>
