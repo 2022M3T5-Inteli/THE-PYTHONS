@@ -28,12 +28,13 @@ Assim, buscamos oferecer uma forma rápida e intuitiva de descobrir quais progra
 
 ## 🛠 Estrutura de pastas
 
-**|-->** documentos<br>
-**|-->** imagens<br>
-**|-->** src<br>
-&emsp;**|-->** Backend<br>
-&emsp;**|-->** Frontend<br>
-&emsp;**|-->** .vscode<br>
+**|-->** Documentos<br>
+**|-->** Source<br>
+**|-->** Antigos<br>
+&emsp;**|-->** Notebooks<br>
+&emsp;**|-->** Web<br>
+&emsp;**|-->** Modelo<br>
+&emsp;**|-->** Datasets <br>
 &emsp;**|-->** .idea<br>
 **|-->** readme.md<br>
 **|-->** .gitignore<br>
@@ -41,15 +42,16 @@ Assim, buscamos oferecer uma forma rápida e intuitiva de descobrir quais progra
 
 Dentre os arquivos presentes na raiz do projeto, definem-se:
 
-**readme.md**: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+**readme.md**: Arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-**.gitignore**: arquivo que faz com que o github ignore o que não precisa.
+**Antigos**: Pasta que contém todos os modelos e dados antigos.
 
-**documentos**: aqui estarão todos os documentos do projeto. Há também uma pasta denominada outros onde estão presentes aqueles documentos complementares ao web application document.
+**.gitignore**: Arquivo que faz com que o github ignore o que não precisa.
 
+**documentos**: Aqui estarão todos os documentos do projeto.
 **imagens**: imagens relacionadas ao projeto como um todo (por exemplo imagens do sistema, do grupo, logotipos e afins).
 
-**src**: nesta pasta encontra-se todo o código fonte do sistema (existem quatro subpastas duas delas sendo backend e frontend que contêm, respectivamente, o código do servidor e o código da página web e as outras duas sendo de arquivos do para uso das ide´s).
+**src**: nesta pasta encontra-se todo o código fonte do sistema (existem quatro subpastas duas delas sendo Notebooks que contem os ipbn para executar o projeto e Datasets que contêm, todos os dados já anonimizados e a pasta Web que contém um colab pronto para executar o modelo. Além disso há a pasta modelo que contém o arquivo do LIGHTGBM).
 
 ## 💻 Configuração para Desenvolvimento
 
@@ -57,7 +59,7 @@ Aqui encontram-se todas as instruções necessárias para a utilização dos not
 
 O dataset e os notebooks foram identificados com o número a serem executados.
 
-Pronto. O servidor está online.
+Basta executar o ultimo colab #5, fazer o input dos dados e a predição esta pronta.  
 
 
 ## 🗃 Histórico de lançamentos
