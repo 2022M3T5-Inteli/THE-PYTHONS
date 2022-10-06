@@ -69,8 +69,11 @@ A cada atualização os detalhes devem ser lançados aqui.
 * 0.2.0 - 26/08/2022
     * Criação das personas, jornada de usuário, anonimização dos dados, transformação de dados categóricos em númericos e remoção de certas colunas ;<br>
 * 0.3.0 - 09/09/2022
-    * Implementação e testes de vários modelos de regressão. Documentação e analise dos resultados obtidos;<br>
-
+    * Implementação e testes de vários modelos de regressão. Documentação e analise dos resultados obtidos;<br>  
+* 0.4.0 - 23/09/2022
+    * Comparação e escolha do melhor modelo. Comparação das predições do modelo com os dados de audiência reais;<br>
+* 1.0.0 - 05/10/2022
+    * Ajustes finais nos notebooks e criação de página web para input. Revisão final da documentação;<br>
 
 ## 📋 Licença/License
 
@@ -80,8 +83,6 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 Aqui estão as referências usadas no projeto.
 
-1. <https://stackoverflow.com/>
-2. <https://www.w3schools.com/>
-3. <jquery-3.6.0.min.js>
-3. <https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js>
-4. <https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css>
+1. <https://scikit-learn.org/stable/>
+2. <https://towardsdatascience.com>
+3. <https://machinelearningmastery.com>
