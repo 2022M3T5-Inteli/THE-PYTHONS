@@ -1,0 +1,283 @@
+<html>
+  <head>
+    <title>Agamotto</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    {% block content %}
+    <style>
+      body {
+        text-align: center;
+      }
+      form {
+        display: inline-block;
+      }
+      .column {
+        float: left;
+        width: 50%;
+        }
+    </style>
+    <div class="row" style="display: flex; columns: unset ; padding-left: 5%; padding-right: 5%" >
+      <div class="column">
+        <div
+          class="card"
+          style="
+            height: 580px;
+            box-shadow: 0px 0px 5px 2px grey;
+            border-radius: 20px;
+            padding-top: 75px;
+          "
+        >
+          <form action="/saida" class="form-group" method="post">
+            <div class="row">
+              <h4 style="font-family: Poppins"><strong>Categoria:</strong></h4>
+              <select
+                style="font-family: Poppins"
+                class="select"
+                name="drop_categoria"
+                id="drop_categoria"
+              >
+                <option value="Categoria_AUDITORIO">AUDITORIO</option>
+                <option value="Categoria_CARROS E MOTORES">
+                  CARROS E MOTORES
+                </option>
+                <option value="Categoria_CULINARIO">CULINARIO</option>
+                <option value="Categoria_DEBATE">DEBATE</option>
+                <option value="Categoria_DOCUMENTARIO">DOCUMENTARIO</option>
+                <option value="Categoria_EDUCATIVO">EDUCATIVO</option>
+                <option value="Categoria_ENTREVISTA">ENTREVISTA</option>
+                <option value="Categoria_ESPORTE">ESPORTE</option>
+                <option value="Categoria_FEMININO">FEMININO</option>
+                <option value="Categoria_FILME">FILME</option>
+                <option value="Categoria_FUTEBOL">FUTEBOL</option>
+                <option value="Categoria_GAME SHOW">GAME SHOW</option>
+                <option value="Categoria_HUMORISTICO">HUMORISTICO</option>
+                <option value="Categoria_JORNALISMO">JORNALISMO</option>
+                <option value="Categoria_MINISSERIE">MINISSERIE</option>
+                <option value="Categoria_MUSICAL">MUSICAL</option>
+                <option value="Categoria_NOVELA">NOVELA</option>
+                <option value="Categoria_OUTROS">OUTROS</option>
+                <option value="Categoria_POLITICO">POLITICO</option>
+                <option value="Categoria_PREMIACAO">PREMIACAO</option>
+                <option value="Categoria_REALITY SHOW">REALITY SHOW</option>
+                <option value="Categoria_RELIGIOSO">RELIGIOSO</option>
+                <option value="Categoria_REPORTAGEM">REPORTAGEM</option>
+                <option value="Categoria_RURAL">RURAL</option>
+                <option value="Categoria_SERIES">SERIES</option>
+                <option value="Categoria_SHOW">SHOW</option>
+                <option value="Categoria_SORTEIO">SORTEIO</option>
+                <option value="Categoria_TELE VENDAS">TELE VENDAS</option>
+              </select>
+            </div>
+            <div class="row">
+              <h4 style="font-family: Poppins; margin-top: 20px">
+                <strong>Dia da Semana:</strong>
+              </h4>
+              <select
+                style="font-family: Poppins"
+                class="select"
+                name="drop_weekDay"
+                id="drop_weekDay"
+              >
+                <option value="Segunda">Segunda-feira</option>
+                <option value="Terça">Terça-feira</option>
+                <option value="Quarta">Quarta-feira</option>
+                <option value="Quinta">Quinta-feira</option>
+                <option value="Sexta">Sexta-feira</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+              </select>
+            </div>
+            <div class="row">
+              <h4 style="font-family: Poppins; margin-top: 20px">
+                <strong>Data:</strong>
+              </h4>
+              <input
+                style="font-family: Poppins"
+                onChange="getValues()"
+                type="date"
+                name="drop_data"
+                id="drop_data"
+              />
+            </div>
+            <div class="row">
+              <div>
+                <h4 style="font-family: Poppins; margin-top: 20px">
+                  <strong>Hora de Inicio:</strong>
+                </h4>
+                <span>
+                  <label style="font-family: Poppins" htmlFor="hour"
+                    >Hora:</label
+                  >
+                  <select
+                    class="select"
+                    style="font-family: Poppins"
+                    name="start_hour"
+                    id="start_hour"
+                  >
+                    <option value="25">01</option>
+                    <option value="26">02</option>
+                    <option value="27">03</option>
+                    <option value="28">04</option>
+                    <option value="29">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                  </select>
+                </span>
+                <span>
+                  <label style="font-family: Poppins" htmlFor="minute"
+                    >Minuto:</label
+                  >
+                  <select
+                    class="select"
+                    style="font-family: Poppins"
+                    id="start_minute"
+                    name="start_minute"
+                  >
+                    <option value="00">00</option>
+                    <option value="05">05</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                  </select>
+                </span>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <h4 style="font-family: Poppins; margin-top: 20px">
+                  <strong>Hora Final:</strong>
+                </h4>
+                <span>
+                  <label style="font-family: Poppins" htmlFor="hour"
+                    >Hora:</label
+                  >
+                  <select
+                    class="select"
+                    style="font-family: Poppins"
+                    id="finish_hour"
+                    name="finish_hour"
+                  >
+                    <option value="25">01</option>
+                    <option value="26">02</option>
+                    <option value="27">03</option>
+                    <option value="28">04</option>
+                    <option value="29">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                  </select>
+                </span>
+                <span>
+                  <label style="font-family: Poppins" htmlFor="minute"
+                    >Minuto:</label
+                  >
+                  <select
+                    class="select"
+                    style="font-family: Poppins"
+                    id="finish_minute"
+                    name="finish_minute"
+                  >
+                    <option value="00">00</option>
+                    <option value="05">05</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                  </select>
+                </span>
+              </div>
+            </div>
+
+            <p>
+              <input
+                class="btn"
+                style="
+                  background-color: black;
+                  color: white;
+                  border-radius: 20px;
+                  width: 200px;
+                  height: 35px;
+                  margin-top: 50px;
+                  font-family: Poppins;
+                "
+                type="submit"
+                value="Realizar Predição"
+              />
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="column">
+        <img
+          style="width: 80%"
+          src="https://files.fm/thumb_show.php?i=39s6chgr6"
+        />
+      </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>
