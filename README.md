@@ -17,7 +17,7 @@
 - <a href="https://www.linkedin.com/in/l%C3%ADvia-bonotto-9064641a3/">Lívia Bonotto</a>
 - <a href="https://www.linkedin.com/in/mateus-rafael-miranda/">Mateus Rafael Miranda</a>
 
-## :snake: Descrição
+## Descrição
 
 Agammoto é uma plataforma que permite predizer a audiência de futuros programas da Rede Gazeta.
 <br><br>
@@ -25,42 +25,27 @@ O objetivo da aplicação é oferecer uma interface online, automática e intuit
 
 Assim, buscamos oferecer uma forma rápida e intuitiva de descobrir quais programas tem a possibilidade de performar melhor. 
 
+## 📁 Estrutura de pastas
+|--> documentos<br>
+  &emsp;| --> outros <br>
+  &emsp;| T5_G3_V01_Predictive_Model_Document.docx<br>
+  &emsp;| T5_G3_V01_Predictive_Model_Document.pdf<br>
+|--> notebooks<br>
+| readme.md<br>
+| license.txt
 
-## 🛠 Estrutura de pastas
+- <b>readme.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-**|-->** Documentos<br>
-**|-->** Source<br>
-**|-->** Antigos<br>
-&emsp;**|-->** Notebooks<br>
-&emsp;**|-->** Web<br>
-&emsp;**|-->** Modelo<br>
-&emsp;**|-->** Datasets <br>
-&emsp;**|-->** .idea<br>
-**|-->** readme.md<br>
-**|-->** .gitignore<br>
+- <b>documentos</b>: aqui estarão todos os documentos do projeto. Há também uma pasta denominada <b>outros</b> onde estão presentes aqueles documentos complementares.
 
+- <b>notebooks</b>: todos os Jupyter Notebooks criados na plataforma Colab para desenvolvimento do projeto.
 
-Dentre os arquivos presentes na raiz do projeto, definem-se:
+## 💻 Execução dos projetos
 
-**readme.md**: Arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+Todos os notebooks do projeto tem o resultado de execução das células visíveis no próprio repositório Github.
 
-**Antigos**: Pasta que contém todos os modelos e dados antigos.
-
-**.gitignore**: Arquivo que faz com que o github ignore o que não precisa.
-
-**documentos**: Aqui estarão todos os documentos do projeto.
-**imagens**: imagens relacionadas ao projeto como um todo (por exemplo imagens do sistema, do grupo, logotipos e afins).
-
-**src**: nesta pasta encontra-se todo o código fonte do sistema (existem quatro subpastas duas delas sendo Notebooks que contem os ipbn para executar o projeto e Datasets que contêm, todos os dados já anonimizados e a pasta Web que contém um colab pronto para executar o modelo. Além disso há a pasta modelo que contém o arquivo do LIGHTGBM).
-
-## 💻 Configuração para Desenvolvimento
-
-Aqui encontram-se todas as instruções necessárias para a utilização dos notebooks e como usar a ferramenta online.<br>
-
-O dataset e os notebooks foram identificados com o número a serem executados.
-
-Basta executar o ultimo colab #5, fazer o input dos dados e a predição esta pronta.  
-
+Para replicação (reexecução dos códigos), o botão `Open in Colab` disponível na página do arquivo neste repositório do Github.
+> Note que sem salvar uma cópia do notebook no seu Google Drive, não é possível salvar as alterações realizadas no arquivo.
 
 ## 🗃 Histórico de lançamentos
 
@@ -79,7 +64,7 @@ A cada atualização os detalhes devem ser lançados aqui.
 
 ## 📋 Licença/License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Spidus/Teste_Final_1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">INTELI, VICTOR BRUNO ALEXANDER ROSETTI DE QUIROZ</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2022M3T5-Inteli/THE-PYTHONS">The Pythons</a> <a>by</a> <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/InteliProjects/.github/blob/main/profile/README.md">Inteli, <a href="https://www.linkedin.com/in/antonionassar/">Antonio Barone Nassar</a>, <a href="https://www.linkedin.com/in/arthur-fraige/">Arthur Fraige</a>, <a href="https://www.linkedin.com/in/carolina-favaro-fricks-1a0423231/">Carolina Favaro Fricks</a>, <a href="https://www.linkedin.com/in/eduardo-franca-porto/">Eduardo França Porto</a>, <a href="https://www.linkedin.com/in/gabriela-rodrigues-matias/">Gabriela Rodrigues Matias</a>, <a href="https://www.linkedin.com/in/l%C3%ADvia-bonotto-9064641a3/">Lívia Bonotto</a>, <a href="https://www.linkedin.com/in/mateus-rafael-miranda/">Mateus Rafael Miranda</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
 
 ## 🎓 Referências
 
